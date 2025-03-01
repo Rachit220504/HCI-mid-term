@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsNow - Responsive News App</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">NewsNow</a>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li class="dark-mode-toggle">
+                        <span class="mode-label">Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for news..." aria-label="Search for news">
+            <button class="search-button" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="breaking-news" role="alert">
+            <i class="fas fa-bolt"></i> Breaking News: Global climate summit reaches new agreement on emissions
+        </div>
+
+        <div class="categories">
+            <span class="category-tag active">All</span>
+            <span class="category-tag">World</span>
+            <span class="category-tag">Local</span>
+            <span class="category-tag">Politics</span>
+            <span class="category-tag">Business</span>
+            <span class="category-tag">Technology</span>
+            <span class="category-tag">Science</span>
+            <span class="category-tag">Health</span>
+            <span class="category-tag">Sports</span>
+            <span class="category-tag">Entertainment</span>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <article class="article-card">
+                    <div class="article-image" role="img" aria-label="Featured story image"></div>
+                    <div class="article-content">
+                        <h2 class="article-title">Tech Giants Announce New AI Ethics Guidelines</h2>
+                        <p class="article-excerpt">Major technology companies have united to establish a comprehensive framework for ethical AI development and deployment, addressing concerns about bias, privacy, and transparency.</p>
+                        <div class="article-meta">
+                            <span>By John Smith</span>
+                            <span>2 hours ago</span>
+                        </div>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image" role="img" aria-label="Article image"></div>
+                    <div class="article-content">
+                        <h2 class="article-title">Economic Recovery Shows Strong Signs After Pandemic Setbacks</h2>
+                        <p class="article-excerpt">Global markets are showing resilience as new economic data suggests a faster than expected recovery from pandemic-related downturns across multiple sectors.</p>
+                        <div class="article-meta">
+                            <span>By Emily Wong</span>
+                            <span>5 hours ago</span>
+                        </div>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image" role="img" aria-label="Article image"></div>
+                    <div class="article-content">
+                        <h2 class="article-title">New Study Reveals Benefits of Plant-Based Diet</h2>
+                        <p class="article-excerpt">Researchers at Oxford University have found significant health improvements in participants who switched to a plant-based diet for just one month.</p>
+                        <div class="article-meta">
+                            <span>By David Chen</span>
+                            <span>Yesterday</span>
+                        </div>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="sidebar">
+                <div class="top-stories">
+                    <h2>Top Stories</h2>
+                    <div class="story-item">
+                        <a href="#">Scientists discover potential breakthrough in renewable energy storage</a>
+                        <span class="story-time">3 hours ago</span>
+                    </div>
+                    <div class="story-item">
+                        <a href="#">Olympic committee announces new sustainability initiatives for future games</a>
+                        <span class="story-time">5 hours ago</span>
+                    </div>
+                    <div class="story-item">
+                        <a href="#">Landmark legislation passed to protect endangered marine ecosystems</a>
+                        <span class="story-time">8 hours ago</span>
+                    </div>
+                    <div class="story-item">
+                        <a href="#">Major film festival announces all-virtual format for next year</a>
+                        <span class="story-time">Yesterday</span>
+                    </div>
+                    <div class="story-item">
+                        <a href="#">New public transportation system to launch in capital city</a>
+                        <span class="story-time">Yesterday</span>
+                    </div>
+                </div>
+
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our daily newsletter for the latest news delivered to your inbox.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" aria-label="Email address for newsletter" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <div class="help-button" id="help-button" aria-label="Open help panel">
+        <i class="fas fa-question"></i>
+    </div>
+    <div class="help-panel" id="help-panel">
+        <button class="close-help" id="close-help" aria-label="Close help panel">×</button>
+        <h3>How can we help?</h3>
+        <ul>
+            <li><a href="#">How to navigate the site</a></li>
+            <li><a href="#">Customize your news feed</a></li>
+            <li><a href="#">Save articles for later</a></li>
+            <li><a href="#">Account settings</a></li>
+            <li><a href="#">Contact support</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Editorial Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Premium Subscription</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">News Alerts</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">GDPR Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 NewsNow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const helpButton = document.getElementById('help-button');
+        const helpPanel = document.getElementById('help-panel');
+        const closeHelp = document.getElementById('close-help');
+        
+        helpButton.addEventListener('click', () => {
+            helpPanel.classList.add('active');
+        });
+        
+        closeHelp.addEventListener('click', () => {
+            helpPanel.classList.remove('active');
+        });
+
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        
+        darkModeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('dark-mode', darkModeToggle.checked);
+        });
+        
+        if (localStorage.getItem('dark-mode') === 'true') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+
+        const categoryTags = document.querySelectorAll('.category-tag');
+        
+        categoryTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                categoryTags.forEach(t => t.classList.remove('active'));
+                tag.classList.add('active');
+            });
+        });
+    const newsletterForm = document.querySelector('.newsletter form');
+
+    newsletterForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const emailInput = this.querySelector('input[type="email"]');
+        const userEmail = emailInput.value;
+        
+        alert(`Thank you! You have successfully subscribed to our newsletter with email: ${userEmail}`);
+        
+        emailInput.value = '';
+        
+  
+});
+    </script>
+</body>
+</html>
